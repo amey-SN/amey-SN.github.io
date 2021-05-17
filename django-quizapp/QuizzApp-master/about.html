@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0px;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="about-section">
+ <h1>About Us</h1>
+ 
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="vedant.jpg" alt="Vedant" style="width:100%">
+      <div class="container">
+        <h2>Vedant Kulkarni</h2>
+        <p class="title">Leader</p>
+        <p>https://www.linkedin.com/in/vedant-kulkarni-6019bb1a2</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="amey.jpg" alt="Amey" style="width:100%">
+      <div class="container">
+        <h2>Amey Nagmode</h2>
+        <p class="title">Group Member</p>
+        <p>https://www.linkedin.com/in/amey-nagmode</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Ram.jpg" alt="Rameshwar" style="width:100%">
+      <div class="container">
+        <h2>Rameshwar Malode</h2>
+        <p class="title">Group Member</p>
+        <p>https://www.linkedin.com/in/rameshwar-malode-9928391b6</p>
+      </div>
+  </div>
+ </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="vishal.jpg" alt="Vishal" style="width:100%">
+      <div class="container">
+        <h2>Vishal Kangude</h2>
+        <p class="title">Group Member</p>
+        <p>https://www.linkedin.com/in/vishal-kangude-2bba9820a</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
